@@ -3,7 +3,7 @@ public class Password {
   private String password;
 
   public Password(){
-    this.password = generateRandomPassword(10);
+    this.password = generateRandomPassword(20);
   }
 
   private String generateRandomPassword(int length){
