@@ -15,6 +15,23 @@ public class Password {
     }
     return new String(password);
   }
+  private void changePassword(String newPword){
+    System.out.println("password must contain atleast 8 characters");
+    System.out.println("Enter new password: ");
+    password=newPword;
+    verifyPassword(password);
+  }
+  public void verifyPassword(String password){
+    boolean verify=false;
+    int length=password.length();
+    while(verify){
+      if(length<=8){
+        System.out.println("password to long");
+        verify=true;
+      }
+      changePassword(password);
+    }
+  }
 
   public String toString(){
     return password;
