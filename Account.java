@@ -24,10 +24,10 @@ public class Account{
   public String getpassword(){
     return  this.password;
   }
-  public String setusername(){
-      return this.username;
+  public void setusername(String username){
+      this.username = username;
   }
-  public String setpassword(){
-    return this.password;
+  public void setpassword(String password){
+      this.password = password;
   }
 }

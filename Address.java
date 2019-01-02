@@ -32,7 +32,7 @@ public class Address{
   }
 
   private String setApt(){
-    System.out.println("Please Enter your Appartment: ");
+    System.out.println("Please Enter your Apartment: ");
     Scanner kb = new Scanner(System.in);
     String s = kb.nextLine();
     return s;
@@ -60,7 +60,7 @@ public class Address{
   }
 
   public String toString(){
-    return number + " " + street + ", " + apt + ", " + city +
+    return number + " " + street + " " + apt + ", " + city +
            ", " + state + " " + zip + " ";
   }
 
