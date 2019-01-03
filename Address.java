@@ -64,6 +64,28 @@ public class Address{
            ", " + state + " " + zip + " ";
   }
 
+  private int getNumber(int number){
+    return this.getNumber;
+  }
 
+  private String getStreet(String street){
+    return this.setStreet;
+  }
+
+  private String getApt(String apt){
+    return this.setApt;
+  }
+
+  private String getCity(String city){
+    return this.setCity;
+  }
+
+  private String getState(String state){
+    return this.setState;
+  }
+
+  private int getZip(int zip){
+    return this.setZip;
+  }
 
 }
