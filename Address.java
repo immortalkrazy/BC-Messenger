@@ -65,27 +65,27 @@ public class Address{
   }
 
   private int getNumber(int number){
-    return this.getNumber;
+    return this.number;
   }
 
   private String getStreet(String street){
-    return this.setStreet;
+    return this.street;
   }
 
   private String getApt(String apt){
-    return this.setApt;
+    return this.apt;
   }
 
   private String getCity(String city){
-    return this.setCity;
+    return this.city;
   }
 
   private String getState(String state){
-    return this.setState;
+    return this.state;
   }
 
   private int getZip(int zip){
-    return this.setZip;
+    return this.zip;
   }
 
 }
