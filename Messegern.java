@@ -2,7 +2,7 @@ public class Messegern{
 
   private String receive;
   private String sent;
-}
+
 public Messegern(String receive, String sent){
   this.receive=receive;
   this.sent=sent;
