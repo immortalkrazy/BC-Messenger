@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class Messenger{
+  private String receive;
+  private String sent;
+
    public static void main(String[]args){
 
      System.out.println("Welcome to BC Messenger!");
@@ -23,5 +26,16 @@ public class Messenger{
    }
    public static void signUp(String username, String password){
 
+   }
+   public Messeger(String receive, String sent){
+     this.receive=receive;
+     this.sent=sent;
+   }
+
+   public String setMesseger(String sent){
+    return this.sent;
+   }
+   public String getMesseger(String receive){
+     return this.receive;
    }
 }
