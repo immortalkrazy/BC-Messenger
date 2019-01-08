@@ -1,3 +1,4 @@
+
 public class Password {
 
   private String password;
@@ -24,12 +25,33 @@ public class Password {
   public void verifyPassword(String password){
     boolean verify=false;
     int length=password.length();
+    boolean hasDigit= false;
+    boolean hasLetter=false;
     while(verify){
-      if(length<=8){
-        System.out.println("password to long");
-        verify=true;
+      if(length>=8){
+        for(int i=0;i<length;i++){
+          char x= password.charAt(i);
+          if(Character.isLetter(x)){
+            hasLetter=true;
+        }
+          if(Character.isDigit(x)){
+            hasDigit=true;
+
+        }
+        if(hasDigit&&hasLetter){
+          break;
+        }
       }
+
+      }
+     if(hasDigit&&hasLetter){
+       System.out.println("Strong Password");
+       verify=true;
+     }
+     else{
+          System.out.println("WEAK Password");
       changePassword(password);
+    }
     }
   }
 
