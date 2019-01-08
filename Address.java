@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Address{
 
-  private int number;
+  private int phonenumber;
   private String street;
   private String apt = "";
   private String city;
@@ -17,7 +17,7 @@ public class Address{
     this.zip = setZip();
   }
 
-  private int setNumber(){
+  private int setphonenumber(){
     System.out.println("Please enter the street number: ");
     Scanner kb = new Scanner(System.in);
     int num = kb.nextInt();
@@ -32,7 +32,7 @@ public class Address{
   }
 
   private String setApt(){
-    System.out.println("Please Enter your Appartment: ");
+    System.out.println("Please Enter your Apartment: ");
     Scanner kb = new Scanner(System.in);
     String s = kb.nextLine();
     return s;
@@ -60,10 +60,32 @@ public class Address{
   }
 
   public String toString(){
-    return number + " " + street + ", " + apt + ", " + city +
+    return number + " " + street + " " + apt + ", " + city +
            ", " + state + " " + zip + " ";
   }
 
+  private int getphonenumber(int number){
+    return this.number;
+  }
 
+  private String getStreet(String street){
+    return this.street;
+  }
+
+  private String getApt(String apt){
+    return this.apt;
+  }
+
+  private String getCity(String city){
+    return this.city;
+  }
+
+  private String getState(String state){
+    return this.state;
+  }
+
+  private int getZip(int zip){
+    return this.zip;
+  }
 
 }
