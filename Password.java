@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
-import java.lang.Object;
->>>>>>> baf467826416b2ca9e2d078deff014915d4cef15
 public class Password {
 
   private String password;
@@ -12,10 +7,13 @@ public class Password {
   }
 
   private String generateRandomPassword(int length){
-  char[] possibleCharacters = (new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}\\|;:\'\",<.>/?")).toCharArray();
-  String randomStr = RandomStringUtils.random( randomStrLength, 0, possibleCharacters.length-1, false, false, possibleCharacters, new SecureRandom() );
-  System.out.println( randomStr );
-
+    String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%";
+    char[] password = new char[length];
+    for (int i = 0; i < length; i++){
+      int rand = (int) (Math.random() * passwordSet.length());
+      password[i] = passwordSet.charAt(rand);
+    }
+    return new String(password);
   }
   private void changePassword(String newPword){
     System.out.println("Password must contain at least 8 characters");
@@ -29,7 +27,6 @@ public class Password {
     boolean hasDigit= false;
     boolean hasLetter=false;
     while(verify){
-<<<<<<< HEAD
       if(length>=8){
         for(int i=0;i<length;i++){
           char x= password.charAt(i);
@@ -43,11 +40,6 @@ public class Password {
         if(hasDigit&&hasLetter){
           break;
         }
-=======
-      if(length<=8){
-        System.out.println("Password too long");
-        verify=true;
->>>>>>> baf467826416b2ca9e2d078deff014915d4cef15
       }
 
       }
@@ -66,4 +58,4 @@ public class Password {
     return password;
   }
 
-}
+ }
