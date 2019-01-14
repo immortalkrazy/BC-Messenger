@@ -14,7 +14,7 @@ public class Password {
       password[i] = passwordSet.charAt(rand);
     }
     return new String(password);
-  }
+  }gi
   private void changePassword(String newPword){
     System.out.println("Password must contain at least 8 characters");
     System.out.println("Enter new password: ");
