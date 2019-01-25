@@ -7,9 +7,9 @@ public class Address{
   private String city;
   private String state;
   private int zip;
-
+//  private String number;
   public Address(){
-    this.number = setNumber();
+  //  this.number = setNumber();
     this.street = setStreet();
     this.apt = setApt();
     this.city = setCity();
@@ -60,12 +60,12 @@ public class Address{
   }
 
   public String toString(){
-    return number + " " + street + " " + apt + ", " + city +
+    return  street + " " + apt + ", " + city +
            ", " + state + " " + zip + " ";
   }
 
-  private int getphonenumber(int number){
-    return this.number;
+  private int getphonenumber(int phonenumber){
+    return this.phonenumber;
   }
 
   private String getStreet(String street){

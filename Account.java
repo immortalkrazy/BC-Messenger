@@ -8,6 +8,9 @@ public class Account{
   private Address address;
   private String username;
   private String password;
+  private String yearin;
+  private String friends;
+  private int age;
   public Account(){
 
   }
@@ -30,4 +33,22 @@ public class Account{
   public void setpassword(String password){
       this.password = password;
   }
+  public String getyearin(){
+  return  this.yearin;
+  }
+  public String getfriends(){
+  return this.friends;
+}
+public String setyearin(String yearin){
+  return this.yearin = yearin;
+}
+public String setfriends(String friends){
+  return this.friends = friends;
+}
+public int getage(){
+  return this.age;
+}
+public int setage(int age){
+  return this.age= age;
+}
 }
